@@ -1,0 +1,33 @@
+import java.util.Scanner;
+class Complex
+{
+    private
+            int real,imag;
+    public
+            Complex()
+            {
+                real=0;
+                imag=0;
+            }
+            void getdata()
+            {
+                Scanner sc=new Scanner(System.in);
+                System.out.println("Enter the real number");
+                real=sc.nextInt();
+                System.out.println("Enter the imaginary number");
+                imag=sc.nextInt();
+            }
+            void display()
+            {
+                System.out.println(real+" +"+imag+"i");
+            }
+}
+public class complex_display 
+{
+public static void main(String[] args)
+{
+    Complex obj=new Complex();
+    obj.getdata();
+    obj.display();
+}
+}

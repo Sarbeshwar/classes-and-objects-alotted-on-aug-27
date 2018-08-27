@@ -1,0 +1,38 @@
+import java.util.Scanner;
+class rectangle
+{
+    private
+            int len,bre;
+            int area;
+    public
+                    Scanner sc=new Scanner(System.in);
+            rectangle()
+            {
+                len=0;
+                bre=0;
+            }
+            void getdata()
+            {
+                len=sc.nextInt();
+                bre=sc.nextInt();
+            }
+            void calculate()
+            {
+                
+                area=len*bre;
+            }
+            void display()
+            {
+                System.out.println(area);
+            }
+}
+public class classes_rectangle_area 
+{
+    public static void main(String args[])
+            {
+                rectangle obj=new rectangle();
+                obj.getdata();
+                obj.calculate();
+                obj.display();
+            }
+}
